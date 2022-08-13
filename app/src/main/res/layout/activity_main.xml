@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/details"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginHorizontal="65dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="PLEASE ENTER OTP"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Validate code that from SMS"
+            android:textColor="#000000"
+            android:textSize="18sp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dash"
+            android:gravity="center"
+            android:hint="Enter 6 digit OTP"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#757373"
+            android:textSize="21sp">
+
+        </EditText>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/otp_img" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/details"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="118dp"
+        android:layout_marginEnd="213dp"
+        android:layout_marginBottom="263dp"
+        app:srcCompat="@drawable/gb" />
+
+
+</RelativeLayout>
